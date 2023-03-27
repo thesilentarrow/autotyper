@@ -1,0 +1,26 @@
+import sys
+
+Arr = [int(x) for x in sys.argv[1].split(',')]
+
+def zeroTwoSort(Arr):
+	for x in Arr:
+		if x<0 or x>2:
+			return [-1]
+	low=0
+	mid=0
+	high=len(Arr)-1
+	while mid<=high:
+		if Arr[mid]==0:
+			Arr[low], Arr[mid]=Arr[mid],Arr[low]
+			low+=1
+			mid+=1
+		elif Arr[mid]==1:
+			mid+=1
+		else:
+			Arr[mid],Arr[high]=Arr[high],Arr[mid]
+			high-=1
+	return Arr
+
+	# Write code here
+
+print(",".join(map(str, zeroTwoSort(Arr))))
