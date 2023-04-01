@@ -234,7 +234,7 @@ class Main(QMainWindow, Ui_MainWindow):
                         type_me = tabbing_mech(lines) #Used for IDEs
                         pyautogui.typewrite(type_me, delay_speed)
                         lines1=lines.rstrip()+'\n'
-                        if 'break' in lines1 or 'return\n' in lines1 or 'pass' in lines1:
+                        if 'break\n' in lines1 or 'return\n' in lines1 or 'pass\n' in lines1:
                             self.x=1
                         else:
                             self.x=0
