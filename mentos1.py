@@ -278,7 +278,7 @@ class Main(QMainWindow, Ui_MainWindow):
                         
                         lines1=lines.rstrip()+'\n'
                         
-                        if 'break\n' in lines1 or 'return\n' in lines1 or 'pass\n' in lines1:
+                        if 'break\n' in lines1 or 'return\n' in lines1 or 'pass\n' in lines1 or 'continue\n' in lines1:
                             self.x=1
                         else:
                             self.x=0
