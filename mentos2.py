@@ -396,6 +396,7 @@ class Main(QMainWindow, Ui_MainWindow):
         
         if self.hot==1:
             keyboard.remove_hotkey('escape')
+            keyboard.remove_hotkey('`')
             self.hot=0  
             
     def start_autotyping(self): 
