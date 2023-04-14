@@ -333,7 +333,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.code_input.setPlaceholderText(_translate("MainWindow", "Paste the code here..."))
+        self.code_input.setPlaceholderText(_translate("MainWindow", "Paste the Python code here..."))
         self.python.setText(_translate("MainWindow", "python"))
         self.python.setChecked(True)
         self.non_python.setText(_translate("MainWindow", "non-python"))
